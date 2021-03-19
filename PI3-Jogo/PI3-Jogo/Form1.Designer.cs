@@ -52,14 +52,15 @@
             this.lblNomePtCr = new System.Windows.Forms.Label();
             this.lblSenhaPtCr = new System.Windows.Forms.Label();
             this.lblVersao = new System.Windows.Forms.Label();
+            this.btnJogar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPartidas)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(39, 12);
+            this.button1.Location = new System.Drawing.Point(14, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 23);
+            this.button1.Size = new System.Drawing.Size(161, 25);
             this.button1.TabIndex = 0;
             this.button1.Text = "Exibir Partidas";
             this.button1.UseVisualStyleBackColor = true;
@@ -67,9 +68,9 @@
             // 
             // btnExbJog
             // 
-            this.btnExbJog.Location = new System.Drawing.Point(39, 51);
+            this.btnExbJog.Location = new System.Drawing.Point(14, 50);
             this.btnExbJog.Name = "btnExbJog";
-            this.btnExbJog.Size = new System.Drawing.Size(95, 23);
+            this.btnExbJog.Size = new System.Drawing.Size(161, 24);
             this.btnExbJog.TabIndex = 3;
             this.btnExbJog.Text = "Exibir Jogadores";
             this.btnExbJog.UseVisualStyleBackColor = true;
@@ -87,7 +88,7 @@
             // 
             this.dgvPartidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPartidas.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvPartidas.Location = new System.Drawing.Point(181, 12);
+            this.dgvPartidas.Location = new System.Drawing.Point(185, 12);
             this.dgvPartidas.MultiSelect = false;
             this.dgvPartidas.Name = "dgvPartidas";
             this.dgvPartidas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -96,7 +97,7 @@
             // 
             // btnEntrarPt
             // 
-            this.btnEntrarPt.Location = new System.Drawing.Point(219, 137);
+            this.btnEntrarPt.Location = new System.Drawing.Point(185, 137);
             this.btnEntrarPt.Name = "btnEntrarPt";
             this.btnEntrarPt.Size = new System.Drawing.Size(141, 28);
             this.btnEntrarPt.TabIndex = 6;
@@ -106,21 +107,21 @@
             // 
             // txtIdPt
             // 
-            this.txtIdPt.Location = new System.Drawing.Point(388, 142);
+            this.txtIdPt.Location = new System.Drawing.Point(349, 145);
             this.txtIdPt.Name = "txtIdPt";
             this.txtIdPt.Size = new System.Drawing.Size(71, 20);
             this.txtIdPt.TabIndex = 7;
             // 
             // txtNomeJog
             // 
-            this.txtNomeJog.Location = new System.Drawing.Point(480, 142);
+            this.txtNomeJog.Location = new System.Drawing.Point(444, 145);
             this.txtNomeJog.Name = "txtNomeJog";
             this.txtNomeJog.Size = new System.Drawing.Size(71, 20);
             this.txtNomeJog.TabIndex = 8;
             // 
             // txtSenhaPt
             // 
-            this.txtSenhaPt.Location = new System.Drawing.Point(574, 142);
+            this.txtSenhaPt.Location = new System.Drawing.Point(538, 145);
             this.txtSenhaPt.Name = "txtSenhaPt";
             this.txtSenhaPt.Size = new System.Drawing.Size(71, 20);
             this.txtSenhaPt.TabIndex = 9;
@@ -128,16 +129,18 @@
             // lblRetornoJog
             // 
             this.lblRetornoJog.AutoSize = true;
-            this.lblRetornoJog.Location = new System.Drawing.Point(36, 248);
+            this.lblRetornoJog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRetornoJog.ForeColor = System.Drawing.Color.Red;
+            this.lblRetornoJog.Location = new System.Drawing.Point(10, 247);
             this.lblRetornoJog.Name = "lblRetornoJog";
-            this.lblRetornoJog.Size = new System.Drawing.Size(86, 13);
+            this.lblRetornoJog.Size = new System.Drawing.Size(129, 20);
             this.lblRetornoJog.TabIndex = 10;
             this.lblRetornoJog.Text = "Retorno Jogador";
             // 
             // lblIdPt
             // 
             this.lblIdPt.AutoSize = true;
-            this.lblIdPt.Location = new System.Drawing.Point(398, 126);
+            this.lblIdPt.Location = new System.Drawing.Point(359, 129);
             this.lblIdPt.Name = "lblIdPt";
             this.lblIdPt.Size = new System.Drawing.Size(52, 13);
             this.lblIdPt.TabIndex = 11;
@@ -146,7 +149,7 @@
             // lblNomeJog
             // 
             this.lblNomeJog.AutoSize = true;
-            this.lblNomeJog.Location = new System.Drawing.Point(475, 126);
+            this.lblNomeJog.Location = new System.Drawing.Point(441, 129);
             this.lblNomeJog.Name = "lblNomeJog";
             this.lblNomeJog.Size = new System.Drawing.Size(76, 13);
             this.lblNomeJog.TabIndex = 12;
@@ -155,7 +158,7 @@
             // lblSenhaPt
             // 
             this.lblSenhaPt.AutoSize = true;
-            this.lblSenhaPt.Location = new System.Drawing.Point(589, 126);
+            this.lblSenhaPt.Location = new System.Drawing.Point(555, 129);
             this.lblSenhaPt.Name = "lblSenhaPt";
             this.lblSenhaPt.Size = new System.Drawing.Size(38, 13);
             this.lblSenhaPt.TabIndex = 13;
@@ -163,21 +166,21 @@
             // 
             // txtIdJog
             // 
-            this.txtIdJog.Location = new System.Drawing.Point(219, 209);
+            this.txtIdJog.Location = new System.Drawing.Point(185, 210);
             this.txtIdJog.Name = "txtIdJog";
             this.txtIdJog.Size = new System.Drawing.Size(100, 20);
             this.txtIdJog.TabIndex = 14;
             // 
             // txtSenhaJog
             // 
-            this.txtSenhaJog.Location = new System.Drawing.Point(334, 209);
+            this.txtSenhaJog.Location = new System.Drawing.Point(302, 209);
             this.txtSenhaJog.Name = "txtSenhaJog";
             this.txtSenhaJog.Size = new System.Drawing.Size(100, 20);
             this.txtSenhaJog.TabIndex = 15;
             // 
             // txtCorJog
             // 
-            this.txtCorJog.Location = new System.Drawing.Point(451, 209);
+            this.txtCorJog.Location = new System.Drawing.Point(417, 209);
             this.txtCorJog.Name = "txtCorJog";
             this.txtCorJog.Size = new System.Drawing.Size(100, 20);
             this.txtCorJog.TabIndex = 16;
@@ -185,7 +188,7 @@
             // lblIdJog
             // 
             this.lblIdJog.AutoSize = true;
-            this.lblIdJog.Location = new System.Drawing.Point(242, 193);
+            this.lblIdJog.Location = new System.Drawing.Point(203, 193);
             this.lblIdJog.Name = "lblIdJog";
             this.lblIdJog.Size = new System.Drawing.Size(57, 13);
             this.lblIdJog.TabIndex = 17;
@@ -194,7 +197,7 @@
             // lblSenhaJog
             // 
             this.lblSenhaJog.AutoSize = true;
-            this.lblSenhaJog.Location = new System.Drawing.Point(346, 193);
+            this.lblSenhaJog.Location = new System.Drawing.Point(314, 193);
             this.lblSenhaJog.Name = "lblSenhaJog";
             this.lblSenhaJog.Size = new System.Drawing.Size(79, 13);
             this.lblSenhaJog.TabIndex = 18;
@@ -203,7 +206,7 @@
             // lblCor
             // 
             this.lblCor.AutoSize = true;
-            this.lblCor.Location = new System.Drawing.Point(492, 193);
+            this.lblCor.Location = new System.Drawing.Point(457, 194);
             this.lblCor.Name = "lblCor";
             this.lblCor.Size = new System.Drawing.Size(23, 13);
             this.lblCor.TabIndex = 19;
@@ -211,9 +214,9 @@
             // 
             // btnCriarPt
             // 
-            this.btnCriarPt.Location = new System.Drawing.Point(24, 285);
+            this.btnCriarPt.Location = new System.Drawing.Point(12, 282);
             this.btnCriarPt.Name = "btnCriarPt";
-            this.btnCriarPt.Size = new System.Drawing.Size(110, 28);
+            this.btnCriarPt.Size = new System.Drawing.Size(110, 41);
             this.btnCriarPt.TabIndex = 20;
             this.btnCriarPt.Text = "Criar Partida";
             this.btnCriarPt.UseVisualStyleBackColor = true;
@@ -221,22 +224,22 @@
             // 
             // txtNomePtCr
             // 
-            this.txtNomePtCr.Location = new System.Drawing.Point(160, 290);
+            this.txtNomePtCr.Location = new System.Drawing.Point(160, 300);
             this.txtNomePtCr.Name = "txtNomePtCr";
-            this.txtNomePtCr.Size = new System.Drawing.Size(100, 20);
+            this.txtNomePtCr.Size = new System.Drawing.Size(110, 20);
             this.txtNomePtCr.TabIndex = 21;
             // 
             // txtSenhaPtCr
             // 
-            this.txtSenhaPtCr.Location = new System.Drawing.Point(284, 290);
+            this.txtSenhaPtCr.Location = new System.Drawing.Point(293, 300);
             this.txtSenhaPtCr.Name = "txtSenhaPtCr";
-            this.txtSenhaPtCr.Size = new System.Drawing.Size(100, 20);
+            this.txtSenhaPtCr.Size = new System.Drawing.Size(109, 20);
             this.txtSenhaPtCr.TabIndex = 22;
             // 
             // lblNomePtCr
             // 
             this.lblNomePtCr.AutoSize = true;
-            this.lblNomePtCr.Location = new System.Drawing.Point(178, 274);
+            this.lblNomePtCr.Location = new System.Drawing.Point(182, 284);
             this.lblNomePtCr.Name = "lblNomePtCr";
             this.lblNomePtCr.Size = new System.Drawing.Size(71, 13);
             this.lblNomePtCr.TabIndex = 23;
@@ -245,7 +248,7 @@
             // lblSenhaPtCr
             // 
             this.lblSenhaPtCr.AutoSize = true;
-            this.lblSenhaPtCr.Location = new System.Drawing.Point(299, 274);
+            this.lblSenhaPtCr.Location = new System.Drawing.Point(314, 282);
             this.lblSenhaPtCr.Name = "lblSenhaPtCr";
             this.lblSenhaPtCr.Size = new System.Drawing.Size(74, 13);
             this.lblSenhaPtCr.TabIndex = 24;
@@ -260,11 +263,22 @@
             this.lblVersao.TabIndex = 25;
             this.lblVersao.Text = "Versão";
             // 
+            // btnJogar
+            // 
+            this.btnJogar.Location = new System.Drawing.Point(538, 193);
+            this.btnJogar.Name = "btnJogar";
+            this.btnJogar.Size = new System.Drawing.Size(118, 36);
+            this.btnJogar.TabIndex = 26;
+            this.btnJogar.Text = "Iniciar Partida";
+            this.btnJogar.UseVisualStyleBackColor = true;
+            this.btnJogar.Click += new System.EventHandler(this.btnJogar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(721, 335);
+            this.Controls.Add(this.btnJogar);
             this.Controls.Add(this.lblVersao);
             this.Controls.Add(this.lblSenhaPtCr);
             this.Controls.Add(this.lblNomePtCr);
@@ -323,6 +337,7 @@
         private System.Windows.Forms.Label lblNomePtCr;
         private System.Windows.Forms.Label lblSenhaPtCr;
         private System.Windows.Forms.Label lblVersao;
+        private System.Windows.Forms.Button btnJogar;
     }
 }
 

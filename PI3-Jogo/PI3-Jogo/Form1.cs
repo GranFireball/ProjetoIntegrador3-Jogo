@@ -16,10 +16,13 @@ namespace PI3_Jogo
         public Form1()
         {
             InitializeComponent();
+
+            // Exibe a versão do jogo na tela
             lblVersao.Text = "Versão " + Jogo.Versao;
         }
         private void button1_Click(object sender, EventArgs e)
         {
+           
             string retorno = Jogo.ListarPartidas("T");
             retorno = retorno.Replace("/r", "");
             string[] linha = retorno.Split('\n');
@@ -54,7 +57,7 @@ namespace PI3_Jogo
             string senha = txtSenhaPt.Text;
             string jogador = Jogo.EntrarPartida(id, nome, senha);
             lblRetornoJog.Text = jogador;
-
+            
             if(jogador.Substring(0,4)!= "ERRO")
             {
                 string[] x = jogador.Split(',');
@@ -69,6 +72,14 @@ namespace PI3_Jogo
             string nome = txtNomePtCr.Text;
             string senha = txtSenhaPtCr.Text;
             txtIdPt.Text = Jogo.CriarPartida(nome, senha);
+        }
+
+        private void btnJogar_Click(object sender, EventArgs e)
+        {
+            int idJog = Convert.ToInt32(txtIdJog.Text);
+            txtNomeJog.Text = idJog.ToString();
+            string senha = txtSenhaJog.Text;
+            txtSenhaJog.Text = Jogo.IniciarPartida(idJog, senha);
         }
     }
 }
