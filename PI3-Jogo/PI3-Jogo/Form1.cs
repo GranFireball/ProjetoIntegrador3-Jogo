@@ -71,15 +71,27 @@ namespace PI3_Jogo
         {
             string nome = txtNomePtCr.Text;
             string senha = txtSenhaPtCr.Text;
-            txtIdPt.Text = Jogo.CriarPartida(nome, senha);
+            lblRetornoJog.Text = Jogo.CriarPartida(nome, senha);
         }
 
         private void btnJogar_Click(object sender, EventArgs e)
         {
-            int idJog = Convert.ToInt32(txtIdJog.Text);
-            txtNomeJog.Text = idJog.ToString();
-            string senha = txtSenhaJog.Text;
-            txtSenhaJog.Text = Jogo.IniciarPartida(idJog, senha);
+            int idJogador = Convert.ToInt32(txtIdJog.Text);
+            string senhaJogador = txtSenhaJog.Text;
+            lblRetornoJog.Text = Jogo.IniciarPartida(idJogador, senhaJogador);
+        }
+
+        private void btnVerVez_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(txtIdPt.Text);
+            lblRetornoJog.Text = Jogo.VerificarVez(id);
+        }
+
+        private void btnRolarDados_Click(object sender, EventArgs e)
+        {
+            int idJogador = Convert.ToInt32(txtIdJog.Text);
+            string senhaJogador = txtSenhaJog.Text;
+            lblValorDados.Text = Jogo.RolarDados(idJogador, senhaJogador);
         }
     }
 }

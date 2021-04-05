@@ -53,6 +53,9 @@
             this.lblSenhaPtCr = new System.Windows.Forms.Label();
             this.lblVersao = new System.Windows.Forms.Label();
             this.btnJogar = new System.Windows.Forms.Button();
+            this.btnVerVez = new System.Windows.Forms.Button();
+            this.btnRolarDados = new System.Windows.Forms.Button();
+            this.lblValorDados = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPartidas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -273,11 +276,43 @@
             this.btnJogar.UseVisualStyleBackColor = true;
             this.btnJogar.Click += new System.EventHandler(this.btnJogar_Click);
             // 
+            // btnVerVez
+            // 
+            this.btnVerVez.Location = new System.Drawing.Point(429, 257);
+            this.btnVerVez.Name = "btnVerVez";
+            this.btnVerVez.Size = new System.Drawing.Size(75, 23);
+            this.btnVerVez.TabIndex = 27;
+            this.btnVerVez.Text = "Verificar Vez";
+            this.btnVerVez.UseVisualStyleBackColor = true;
+            this.btnVerVez.Click += new System.EventHandler(this.btnVerVez_Click);
+            // 
+            // btnRolarDados
+            // 
+            this.btnRolarDados.Location = new System.Drawing.Point(429, 295);
+            this.btnRolarDados.Name = "btnRolarDados";
+            this.btnRolarDados.Size = new System.Drawing.Size(75, 23);
+            this.btnRolarDados.TabIndex = 28;
+            this.btnRolarDados.Text = "Rolar Dados";
+            this.btnRolarDados.UseVisualStyleBackColor = true;
+            this.btnRolarDados.Click += new System.EventHandler(this.btnRolarDados_Click);
+            // 
+            // lblValorDados
+            // 
+            this.lblValorDados.AutoSize = true;
+            this.lblValorDados.Location = new System.Drawing.Point(544, 257);
+            this.lblValorDados.Name = "lblValorDados";
+            this.lblValorDados.Size = new System.Drawing.Size(65, 13);
+            this.lblValorDados.TabIndex = 29;
+            this.lblValorDados.Text = "Valor Dados";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(721, 335);
+            this.Controls.Add(this.lblValorDados);
+            this.Controls.Add(this.btnRolarDados);
+            this.Controls.Add(this.btnVerVez);
             this.Controls.Add(this.btnJogar);
             this.Controls.Add(this.lblVersao);
             this.Controls.Add(this.lblSenhaPtCr);
@@ -338,6 +373,9 @@
         private System.Windows.Forms.Label lblSenhaPtCr;
         private System.Windows.Forms.Label lblVersao;
         private System.Windows.Forms.Button btnJogar;
+        private System.Windows.Forms.Button btnVerVez;
+        private System.Windows.Forms.Button btnRolarDados;
+        private System.Windows.Forms.Label lblValorDados;
     }
 }
 

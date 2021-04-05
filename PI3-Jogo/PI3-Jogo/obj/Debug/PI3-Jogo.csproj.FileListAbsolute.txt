@@ -37,3 +37,16 @@ C:\PI3-Jogo\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\obj\Debug\PI3-Jogo.csproj.
 C:\PI3-Jogo\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\obj\Debug\PI3-Jogo.csproj.CopyComplete
 C:\PI3-Jogo\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\obj\Debug\PI3-Jogo.exe
 C:\PI3-Jogo\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\obj\Debug\PI3-Jogo.pdb
+C:\repositorios\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\obj\Debug\PI3-Jogo.csprojAssemblyReference.cache
+C:\repositorios\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\obj\Debug\PI3_Jogo.Form1.resources
+C:\repositorios\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\obj\Debug\PI3_Jogo.Properties.Resources.resources
+C:\repositorios\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\obj\Debug\PI3-Jogo.csproj.GenerateResource.cache
+C:\repositorios\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\obj\Debug\PI3-Jogo.csproj.CoreCompileInputs.cache
+C:\repositorios\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\obj\Debug\PI3-Jogo.exe
+C:\repositorios\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\obj\Debug\PI3-Jogo.pdb
+C:\repositorios\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\bin\Debug\PI3-Jogo.exe.config
+C:\repositorios\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\bin\Debug\PI3-Jogo.exe
+C:\repositorios\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\bin\Debug\PI3-Jogo.pdb
+C:\repositorios\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\bin\Debug\CantStopServer.dll
+C:\repositorios\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\bin\Debug\CantStopServer.xml
+C:\repositorios\ProjetoIntegrador3-Jogo\PI3-Jogo\PI3-Jogo\obj\Debug\PI3-Jogo.csproj.CopyComplete
