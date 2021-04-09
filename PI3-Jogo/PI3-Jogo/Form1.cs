@@ -13,6 +13,12 @@ namespace PI3_Jogo
     public partial class Form1 : Form
     {
         public int idPartida { get; set; }
+
+        public int Conta(int n1, int n2)
+        {
+            int res = n1 + n2;
+            return res;
+        }
         public Form1()
         {
             InitializeComponent();
@@ -92,6 +98,26 @@ namespace PI3_Jogo
             int idJogador = Convert.ToInt32(txtIdJog.Text);
             string senhaJogador = txtSenhaJog.Text;
             lblValorDados.Text = Jogo.RolarDados(idJogador, senhaJogador);
+        }
+
+        private void btnRes_Click(object sender, EventArgs e)
+        {
+            int d1 = Convert.ToInt32(txtD1.Text);
+            int d2 = Convert.ToInt32(txtD2.Text);
+            int d3 = Convert.ToInt32(txtD3.Text);
+            int d4 = Convert.ToInt32(txtD4.Text);
+            int res1 = Conta(d1, d2);
+            int res2 = Conta(d3, d4);
+            int res3 = Conta(d1, d3);
+            int res4 = Conta(d2, d4);
+            int res5 = Conta(d1, d4);
+            int res6 = Conta(d2, d3);
+            lblR1.Text = res1.ToString();
+            lblR2.Text = res2.ToString();
+            lblR3.Text = res3.ToString();
+            lblR4.Text = res4.ToString();
+            lblR5.Text = res5.ToString();
+            lblR6.Text = res6.ToString();
         }
     }
 }

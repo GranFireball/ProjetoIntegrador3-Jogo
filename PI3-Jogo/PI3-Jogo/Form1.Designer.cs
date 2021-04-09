@@ -56,6 +56,17 @@
             this.btnVerVez = new System.Windows.Forms.Button();
             this.btnRolarDados = new System.Windows.Forms.Button();
             this.lblValorDados = new System.Windows.Forms.Label();
+            this.btnRes = new System.Windows.Forms.Button();
+            this.txtD1 = new System.Windows.Forms.TextBox();
+            this.txtD2 = new System.Windows.Forms.TextBox();
+            this.txtD3 = new System.Windows.Forms.TextBox();
+            this.txtD4 = new System.Windows.Forms.TextBox();
+            this.lblR2 = new System.Windows.Forms.Label();
+            this.lblR3 = new System.Windows.Forms.Label();
+            this.lblR4 = new System.Windows.Forms.Label();
+            this.lblR5 = new System.Windows.Forms.Label();
+            this.lblR1 = new System.Windows.Forms.Label();
+            this.lblR6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPartidas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -305,11 +316,114 @@
             this.lblValorDados.TabIndex = 29;
             this.lblValorDados.Text = "Valor Dados";
             // 
+            // btnRes
+            // 
+            this.btnRes.Location = new System.Drawing.Point(15, 358);
+            this.btnRes.Name = "btnRes";
+            this.btnRes.Size = new System.Drawing.Size(106, 35);
+            this.btnRes.TabIndex = 30;
+            this.btnRes.Text = "Resultados";
+            this.btnRes.UseVisualStyleBackColor = true;
+            this.btnRes.Click += new System.EventHandler(this.btnRes_Click);
+            // 
+            // txtD1
+            // 
+            this.txtD1.Location = new System.Drawing.Point(439, 343);
+            this.txtD1.Name = "txtD1";
+            this.txtD1.Size = new System.Drawing.Size(65, 20);
+            this.txtD1.TabIndex = 31;
+            // 
+            // txtD2
+            // 
+            this.txtD2.Location = new System.Drawing.Point(439, 369);
+            this.txtD2.Name = "txtD2";
+            this.txtD2.Size = new System.Drawing.Size(65, 20);
+            this.txtD2.TabIndex = 32;
+            // 
+            // txtD3
+            // 
+            this.txtD3.Location = new System.Drawing.Point(439, 395);
+            this.txtD3.Name = "txtD3";
+            this.txtD3.Size = new System.Drawing.Size(65, 20);
+            this.txtD3.TabIndex = 33;
+            // 
+            // txtD4
+            // 
+            this.txtD4.Location = new System.Drawing.Point(439, 421);
+            this.txtD4.Name = "txtD4";
+            this.txtD4.Size = new System.Drawing.Size(65, 20);
+            this.txtD4.TabIndex = 34;
+            // 
+            // lblR2
+            // 
+            this.lblR2.AutoSize = true;
+            this.lblR2.Location = new System.Drawing.Point(157, 358);
+            this.lblR2.Name = "lblR2";
+            this.lblR2.Size = new System.Drawing.Size(63, 13);
+            this.lblR2.TabIndex = 35;
+            this.lblR2.Text = "Dado: 3 e 4";
+            // 
+            // lblR3
+            // 
+            this.lblR3.AutoSize = true;
+            this.lblR3.Location = new System.Drawing.Point(157, 380);
+            this.lblR3.Name = "lblR3";
+            this.lblR3.Size = new System.Drawing.Size(63, 13);
+            this.lblR3.TabIndex = 36;
+            this.lblR3.Text = "Dado: 1 e 3";
+            // 
+            // lblR4
+            // 
+            this.lblR4.AutoSize = true;
+            this.lblR4.Location = new System.Drawing.Point(157, 402);
+            this.lblR4.Name = "lblR4";
+            this.lblR4.Size = new System.Drawing.Size(63, 13);
+            this.lblR4.TabIndex = 37;
+            this.lblR4.Text = "Dado: 2 e 4";
+            // 
+            // lblR5
+            // 
+            this.lblR5.AutoSize = true;
+            this.lblR5.Location = new System.Drawing.Point(157, 424);
+            this.lblR5.Name = "lblR5";
+            this.lblR5.Size = new System.Drawing.Size(63, 13);
+            this.lblR5.TabIndex = 38;
+            this.lblR5.Text = "Dado: 1 e 4";
+            // 
+            // lblR1
+            // 
+            this.lblR1.AutoSize = true;
+            this.lblR1.Location = new System.Drawing.Point(157, 334);
+            this.lblR1.Name = "lblR1";
+            this.lblR1.Size = new System.Drawing.Size(63, 13);
+            this.lblR1.TabIndex = 39;
+            this.lblR1.Text = "Dado: 1 e 2";
+            // 
+            // lblR6
+            // 
+            this.lblR6.AutoSize = true;
+            this.lblR6.Location = new System.Drawing.Point(157, 448);
+            this.lblR6.Name = "lblR6";
+            this.lblR6.Size = new System.Drawing.Size(63, 13);
+            this.lblR6.TabIndex = 40;
+            this.lblR6.Text = "Dado: 2 e 3";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(721, 335);
+            this.ClientSize = new System.Drawing.Size(721, 470);
+            this.Controls.Add(this.lblR6);
+            this.Controls.Add(this.lblR1);
+            this.Controls.Add(this.lblR5);
+            this.Controls.Add(this.lblR4);
+            this.Controls.Add(this.lblR3);
+            this.Controls.Add(this.lblR2);
+            this.Controls.Add(this.txtD4);
+            this.Controls.Add(this.txtD3);
+            this.Controls.Add(this.txtD2);
+            this.Controls.Add(this.txtD1);
+            this.Controls.Add(this.btnRes);
             this.Controls.Add(this.lblValorDados);
             this.Controls.Add(this.btnRolarDados);
             this.Controls.Add(this.btnVerVez);
@@ -376,6 +490,17 @@
         private System.Windows.Forms.Button btnVerVez;
         private System.Windows.Forms.Button btnRolarDados;
         private System.Windows.Forms.Label lblValorDados;
+        private System.Windows.Forms.Button btnRes;
+        private System.Windows.Forms.TextBox txtD1;
+        private System.Windows.Forms.TextBox txtD2;
+        private System.Windows.Forms.TextBox txtD3;
+        private System.Windows.Forms.TextBox txtD4;
+        private System.Windows.Forms.Label lblR2;
+        private System.Windows.Forms.Label lblR3;
+        private System.Windows.Forms.Label lblR4;
+        private System.Windows.Forms.Label lblR5;
+        private System.Windows.Forms.Label lblR1;
+        private System.Windows.Forms.Label lblR6;
     }
 }
 
