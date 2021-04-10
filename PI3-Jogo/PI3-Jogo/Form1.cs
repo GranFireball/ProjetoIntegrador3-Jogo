@@ -119,5 +119,21 @@ namespace PI3_Jogo
             lblR5.Text = res5.ToString();
             lblR6.Text = res6.ToString();
         }
+
+        private void btnMover_Click(object sender, EventArgs e)
+        {
+            int idJogador = Convert.ToInt32(txtIdJog.Text);
+            string senhaJogador = txtSenhaJog.Text;
+            string ordem = txtOrdem.Text;
+            string trilha = txtTrilha.Text;
+            lblRetornoJog.Text = Jogo.Mover(idJogador, senhaJogador, ordem, trilha);
+        }
+
+        private void btnParar_Click(object sender, EventArgs e)
+        {
+            int idJogador = Convert.ToInt32(txtIdJog.Text);
+            string senhaJogador = txtSenhaJog.Text;
+            lblRetornoJog.Text = Jogo.Parar(idJogador, senhaJogador);
+        }
     }
 }

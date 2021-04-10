@@ -67,6 +67,16 @@
             this.lblR5 = new System.Windows.Forms.Label();
             this.lblR1 = new System.Windows.Forms.Label();
             this.lblR6 = new System.Windows.Forms.Label();
+            this.txtOrdem = new System.Windows.Forms.TextBox();
+            this.txtTrilha = new System.Windows.Forms.TextBox();
+            this.lblOrdem = new System.Windows.Forms.Label();
+            this.lblTrilha = new System.Windows.Forms.Label();
+            this.btnMover = new System.Windows.Forms.Button();
+            this.btnParar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPartidas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -408,11 +418,109 @@
             this.lblR6.TabIndex = 40;
             this.lblR6.Text = "Dado: 2 e 3";
             // 
+            // txtOrdem
+            // 
+            this.txtOrdem.Location = new System.Drawing.Point(284, 351);
+            this.txtOrdem.Name = "txtOrdem";
+            this.txtOrdem.Size = new System.Drawing.Size(85, 20);
+            this.txtOrdem.TabIndex = 41;
+            // 
+            // txtTrilha
+            // 
+            this.txtTrilha.Location = new System.Drawing.Point(284, 424);
+            this.txtTrilha.Name = "txtTrilha";
+            this.txtTrilha.Size = new System.Drawing.Size(85, 20);
+            this.txtTrilha.TabIndex = 42;
+            // 
+            // lblOrdem
+            // 
+            this.lblOrdem.AutoSize = true;
+            this.lblOrdem.Location = new System.Drawing.Point(314, 334);
+            this.lblOrdem.Name = "lblOrdem";
+            this.lblOrdem.Size = new System.Drawing.Size(38, 13);
+            this.lblOrdem.TabIndex = 43;
+            this.lblOrdem.Text = "Ordem";
+            // 
+            // lblTrilha
+            // 
+            this.lblTrilha.AutoSize = true;
+            this.lblTrilha.Location = new System.Drawing.Point(314, 408);
+            this.lblTrilha.Name = "lblTrilha";
+            this.lblTrilha.Size = new System.Drawing.Size(33, 13);
+            this.lblTrilha.TabIndex = 44;
+            this.lblTrilha.Text = "Trilha";
+            // 
+            // btnMover
+            // 
+            this.btnMover.Location = new System.Drawing.Point(15, 415);
+            this.btnMover.Name = "btnMover";
+            this.btnMover.Size = new System.Drawing.Size(92, 22);
+            this.btnMover.TabIndex = 45;
+            this.btnMover.Text = "Mover";
+            this.btnMover.UseVisualStyleBackColor = true;
+            this.btnMover.Click += new System.EventHandler(this.btnMover_Click);
+            // 
+            // btnParar
+            // 
+            this.btnParar.Location = new System.Drawing.Point(14, 443);
+            this.btnParar.Name = "btnParar";
+            this.btnParar.Size = new System.Drawing.Size(92, 22);
+            this.btnParar.TabIndex = 46;
+            this.btnParar.Text = "Parar";
+            this.btnParar.UseVisualStyleBackColor = true;
+            this.btnParar.Click += new System.EventHandler(this.btnParar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(510, 346);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.TabIndex = 47;
+            this.label1.Text = "valor dado1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(510, 372);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.TabIndex = 48;
+            this.label2.Text = "valor dado2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(510, 398);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 49;
+            this.label3.Text = "valor dado3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(510, 424);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 13);
+            this.label4.TabIndex = 50;
+            this.label4.Text = "valor dado4";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(721, 470);
+            this.ClientSize = new System.Drawing.Size(721, 486);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnParar);
+            this.Controls.Add(this.btnMover);
+            this.Controls.Add(this.lblTrilha);
+            this.Controls.Add(this.lblOrdem);
+            this.Controls.Add(this.txtTrilha);
+            this.Controls.Add(this.txtOrdem);
             this.Controls.Add(this.lblR6);
             this.Controls.Add(this.lblR1);
             this.Controls.Add(this.lblR5);
@@ -501,6 +609,16 @@
         private System.Windows.Forms.Label lblR5;
         private System.Windows.Forms.Label lblR1;
         private System.Windows.Forms.Label lblR6;
+        private System.Windows.Forms.TextBox txtOrdem;
+        private System.Windows.Forms.TextBox txtTrilha;
+        private System.Windows.Forms.Label lblOrdem;
+        private System.Windows.Forms.Label lblTrilha;
+        private System.Windows.Forms.Button btnMover;
+        private System.Windows.Forms.Button btnParar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
